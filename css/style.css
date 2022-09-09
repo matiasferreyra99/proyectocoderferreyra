@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(26, 107, 26) ;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: .5fr 1fr .5fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "header header header header"
+                         "main main main main"
+                         "footer footer footer footer";
+
+grid-column-gap: 1em;
+grid-row-gap: 1em;
+
+
+
+}
+
+header nav ul li{
+    display: inline-block;
+    margin-left: auto;
+}
+
+
+header{
+  grid-area: header;
+  background-color: rgb(4, 122, 4);
+}
+main {
+    grid-area: main;
+    background-color:rgb(4, 122, 4) ;
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: ". . ."
+                         "propiedades ingrese buscar";
+    align-items: center;
+    justify-items: center;
+    border: 5px solid green;
+    padding: 50px;
+
+
+}
+#propiedades{
+grid-area: propiedades;
+color: aliceblue;
+background-color: black;
+border: 1px solid white;
+padding: 3px;
+}
+#ingresarpropiedades{
+color: aliceblue;
+grid-area: ingrese;
+background-color: black;
+border: 1px solid white;
+padding: 3px;
+}
+#buscar{
+grid-area: buscar;
+background-color: black;
+border: 1px solid white;
+padding: 3px;
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgb(4, 122, 4);
+
+}
+
+footer div{
+    display: inline-block;
+}
+
+
+
+/* @media (1200px)
+     */
+  
+
+/* PAG CONTACTO */
+
+
+.body_contacto{
+    background-color:rgb(26, 107, 26) ;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: .5fr 1fr .5fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "nav_cont nav_cont nav_cont nav_cont"
+                         "main_cont main_cont main_cont main_cont "
+                         "footer_cont footer_cont footer_cont footer_cont";
+
+
+}
+
+#nav_contacto{
+    grid-area: nav_cont;
+    background-color: rgb(4, 56, 12);
+    
+}
+#main_contacto{
+    grid-area: main_cont;
+    background-color: rgb(5, 126, 55);
+    border: rgb(4, 122, 4);
+    padding: 3px;
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-template-areas:". ."
+                        "form img_cont";
+grid-column-gap: 1em;
+grid-row-gap: 1em;
+
+
+    
+
+   
+}
+#imagen_contacto{
+    grid-area: img_cont;
+    border: 5px solid white;
+}
+#formulario{
+    grid-area: form;
+    background-color: aliceblue;
+
+}
+#footer_contacto{
+    grid-area: footer_cont;
+    background-color: rgb(6, 153, 30);
+}
+
+
+.footer{
+    display: inline-block;
+}
+
+/* @media  screen and (1200px) */
