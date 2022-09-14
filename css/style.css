@@ -1,25 +1,25 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
 }
+
 body{
-    background-color:rgb(26, 107, 26) ;
-    width: 100vw;
-    height: 100vh;
+    background-image: linear-gradient(to right, red,blue);
     display: grid;
-    grid-template-rows: .5fr 1fr .5fr;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr) ;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "header header header header"
                          "main main main main"
-                         "footer footer footer footer";
-
-grid-column-gap: 1em;
-grid-row-gap: 1em;
-
-
-
+                         "main main main main"
+                         "footer footer footer footer"
+                         ;
+    align-items: center;
+    justify-items: center;
+    border: 5px solid green;
+    padding: 50px; 
 }
+
+
 
 header nav ul li{
     display: inline-block;
@@ -33,7 +33,7 @@ header{
 }
 main {
     grid-area: main;
-    background-color:rgb(4, 122, 4) ;
+    background-color: green;
     display: grid;
     grid-template-rows: 1fr 1fr ;
     grid-template-columns: repeat(3, 1fr);
@@ -42,8 +42,7 @@ main {
     align-items: center;
     justify-items: center;
     border: 5px solid green;
-    padding: 50px;
-
+    padding: 50px; 
 
 }
 #propiedades{
@@ -52,6 +51,9 @@ color: aliceblue;
 background-color: black;
 border: 1px solid white;
 padding: 3px;
+animation-name: animacion_propiedades;
+animation-duration: 5s;
+
 }
 #ingresarpropiedades{
 color: aliceblue;
