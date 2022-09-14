@@ -2,17 +2,20 @@
     grid-column-gap: 1em;
     grid-row-gap: 1em;
 }
+body{
+    background-image:  linear-gradient(180deg, rgba(0,36,16,1) 0%, rgba(11,121,9,1) 56%, rgba(0,212,255,0) 83%);
+}
 
 body{
-    background-image: linear-gradient(to right, red,blue);
+    width: 100vw;
+    height: 100vh;
     display: grid;
     grid-template-rows: repeat(4, 1fr) ;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "header header header header"
                          "main main main main"
                          "main main main main"
-                         "footer footer footer footer"
-                         ;
+                         "footer footer footer footer";
     align-items: center;
     justify-items: center;
     border: 5px solid green;
@@ -22,6 +25,8 @@ body{
 
 
 header nav ul li{
+    width: 100vw;
+    height: 5vh;
     display: inline-block;
     margin-left: auto;
 }
@@ -32,6 +37,8 @@ header{
   background-color: rgb(4, 122, 4);
 }
 main {
+    width: 100vw;
+    height: 5vh;
     grid-area: main;
     background-color: green;
     display: grid;
@@ -70,6 +77,8 @@ padding: 3px;
 }
 
 footer{
+    width: 100vw;
+    height: 5vh;
     grid-area: footer;
     background-color: rgb(4, 122, 4);
 
@@ -89,7 +98,7 @@ footer div{
 
 
 .body_contacto{
-    background-color:rgb(26, 107, 26) ;
+    background-image:  linear-gradient(180deg, rgba(0,36,16,1) 0%, rgba(11,121,9,1) 56%, rgba(0,212,255,0) 83%);
     width: 100vw;
     height: 100vh;
     display: grid;
@@ -98,8 +107,15 @@ footer div{
     grid-template-areas: "nav_cont nav_cont nav_cont nav_cont"
                          "main_cont main_cont main_cont main_cont "
                          "footer_cont footer_cont footer_cont footer_cont";
+    align-items: center;
+    justify-items: center;
+    border: 5px solid green;
+    padding: 50px; 
+                 
+}
 
-
+.body_contacto #nav_contacto #barra_nav{
+    display: inline-block;
 }
 
 #nav_contacto{
