@@ -4,57 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../proyecto coder ferreyra/css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1><img src="../proyecto coder ferreyra/assets/image/ferreyra.PNG" alt=""></h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="./pages/nosotros.html">nosotros</a></li>
-                <li><a href="./pages/galeria-imagenes.html">galeria</a></li>
-                <li><a href="./pages/tasaciones.html">tasaciones</a></li>
-                <li><a href="./pages/contacto.html">contacto</a></li>
-            </ul>
-        </nav>
-         
+    <header class="container-fluid">
+          <div class="row bg-success align-items-start text-center">
+              <div class="col">
+                <nav class="navbar navbar-light bg-success">
+                    <div class="container-fluid">>
+                      <a class="navbar-brand" href="./index.html">
+                       <img src="./assets/image/ferreyra.PNG" alt="" width="90" height="40" class="d-inline-block align-items-xl-start">
+                      </a>
+                    </div>
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                          <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="./pages/propiedades.html">propiedades</a>
+                            <a class="nav-link" href="./pages/tasaciones.html">tasaciones</a>
+                            <a class="nav-link" href="./pages/nosotros.html">nosotros</a>
+                            <a class="nav-link" href="./pages/contacto.html" tabindex="-1" aria-disabled="true">contacto</a>
+                          </div>
+                        </div>
+                      </div>
+                 </nav>   
+             </div>
+           </div>
+ </header>
     
-    </header>
-    
-
-   
-
-<main>
- 
-    <h1 id="propiedades">buscar propiedad</h1>
-    <h2 id="ingresarpropiedades">ingrese ubicacion</h2>
-    <button id="buscar">buscar</button>
- 
-     
+ <main class="container-fluid">
+    <div class="row" id="main">
+        <section class="col-12 bg-body" id="sectionuno" ></section>
+        <img src="https://cf.ltkcdn.net/es-feng-shui/images/std/250582-800x515r1-ideas-feng-shui-colores-exterior-casa.jpg" class="img-fluid" alt="imagen-principal">
+        <section class="col-12 bg-success" id="sectiondos">
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">Ubicacion</label>
+                  <input type="text" class="form-control" id="validationCustom01" value="cualquiera" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Estado de la propiedad</label>
+                  <input type="text" class="form-control" id="validationCustom02" value="cualquiera" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustomUsername" class="form-label">Tipo de propiedad</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend"></span>
+                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationCustom03" class="form-label">Ambientes</label>
+                  <input type="text" class="form-control" id="validationCustom03" required>
+                  <button>Buscar</button>
+              </form>
+        </section>
+    </div>
   
-   
-
-   
-    
 </main>
     
-<footer>
-   <div>
-    4626-0913
-</div> 
-<div>
-    11-****-***
-</div> 
-<div>
-   ********@gmail.com
-</div> 
-<div>
-    av**** 2564
-</div> 
+<footer class="container-fluid bg-success">
+    <div class="row bg-success align-items-start text-center">
+        <ul class="col bg-success">
+           <li>4626-0913</li> 
+            <li>11-****-***</li> 
+           <li>********@gmail.com</li> 
+           <li>av**** 2564</li> 
+        </ul>
+    </div>
   
 </footer> 
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
     
 
