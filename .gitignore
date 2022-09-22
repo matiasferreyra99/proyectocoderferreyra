@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 **node_modules
 /node_modules
 ./node_modules
+=======
+**node_modules
+/node_modules
+./node_modules
+>>>>>>> 085f1b583e254cfd5aba6731312be24765768fb4
 node_modules/
