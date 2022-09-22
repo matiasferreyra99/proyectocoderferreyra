@@ -15,6 +15,25 @@ footer{
     height: 20vh;
 }
 
+body{
+    width: 100px;
+    height: 100px;
+    animation-name: ferreyra;
+    animation-duration: 5;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ferreyra{
+    0%{
+        width: 0;
+        height: 0;
+    }
+    100% {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
 /* #main-propiedades{
     height: 80vh;
 } */
