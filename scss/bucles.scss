@@ -1,0 +1,10 @@
+@for $i from 1 through 4 {
+    // @debug "" +$i+"%2="+$i%2;
+    @if ($i%2==1) {
+       $color:orange; 
+    }
+    @else{
+        $color:blue;
+    }
+    
+}

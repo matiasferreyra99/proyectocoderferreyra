@@ -1,0 +1,12 @@
+$colores:(
+    rojo: red,
+    verde: green,
+    azul: blue ,
+    celeste: aqua,
+);
+
+@each $nombre,$color in $colores {
+   .#($nombre){
+    color:$color;
+   }
+}
