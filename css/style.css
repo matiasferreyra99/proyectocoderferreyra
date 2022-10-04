@@ -1,10 +1,53 @@
 body {
+  height: 150vh;
+  width: 100vw; }
+  body header {
+    height: 30vh; }
+  body main {
+    height: 95vh; }
+  body footer {
+    height: 30vh; }
+
+.body-propiedades {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
-  body header {
-    height: 20vh; }
-  body main {
-    height: 60vh; }
-  body footer {
-    height: 20vh; }
+  .body-propiedades #header-propiedades {
+    height: 30vh; }
+  .body-propiedades #main-propiedades {
+    height: 90vh; }
+  .body-propiedades #footer-propiedades {
+    height: 30vh; }
+
+.body-tasaciones {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+  .body-tasaciones #header-tasaciones {
+    height: 15vh; }
+  .body-tasaciones #main-tasaciones {
+    height: 115vh; }
+  .body-tasaciones #footer-tasaciones {
+    height: 15vh; }
+
+.body-contactos {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+  .body-contactos #header-nosotros {
+    height: 15vh; }
+  .body-contactos #main-nosotros {
+    height: 115vh; }
+  .body-contactos #footer-nosotros {
+    height: 15vh; }
+
+.body-contactos {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+  .body-contactos #header-contacto {
+    height: 15vh; }
+  .body-contactos #main-contacto {
+    height: 115vh; }
+  .body-contactos #footer-contacto {
+    height: 15vh; }

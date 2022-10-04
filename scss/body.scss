@@ -1,10 +1,11 @@
 body{
-    @include reset; 
+   height: 150vh;
+   width: 100vw;
     header{
         @include vh;
     }
     main{
-        height: 60vh;
+        height: 95vh;
     }
     footer{
         @include vh;
@@ -12,5 +13,53 @@ body{
 }
 
    
+.body-propiedades{
+     @include reset ;
+    #header-propiedades{
+        height: 30vh;
+    }
+    #main-propiedades{
+        height: 90vh;
+    }
+    #footer-propiedades{
+        height: 30vh;
+    }
+}
 
+.body-tasaciones{
+    @include reset;
+    #header-tasaciones{
+        height: 15vh;
+    }
+    #main-tasaciones{
+        height: 115vh;
+    }
+    #footer-tasaciones{
+        height: 15vh;
+    }
+}
+.body-contactos{
+    @include reset;
+    #header-nosotros{
+        height: 15vh;
+    }
+    #main-nosotros{
+        height: 115vh;
+    }
+    #footer-nosotros{
+        height: 15vh;
+    }
+}
+.body-contactos{
+    @include reset;
+    #header-contacto{
+        height: 15vh;
+    }
+    #main-contacto{
+        height: 115vh;
+    }
+    #footer-contacto{
+        height: 15vh;
+    }
+}
 
